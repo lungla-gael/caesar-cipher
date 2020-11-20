@@ -22,4 +22,3 @@ def caesar_cipher(text,key)
     end
     cipher.join
 end
-p caesar_cipher("What a string!", 5)
