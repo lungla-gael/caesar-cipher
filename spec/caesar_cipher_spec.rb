@@ -16,8 +16,8 @@ describe "Caesar Cipher" do
         it "wraps" do
             expect(caesar_cipher('Z', 1)).to eql('A')
         end
-        it "encrypts with large keys" do
-            expect(caesar_cipher('Hello, World!', 75)).to eql('Ebiil, Tloia!')
+        context "with large keys" do
+            it { expect(caesar_cipher('Hello, World!', 75)).to eql('Ebiil, Tloia!') }
         end
     end
 end
